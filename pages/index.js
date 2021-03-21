@@ -14,6 +14,7 @@ import AboutSection from 'src/pages-sections/AboutSection/AboutSection.js'
 import HeroSection from '../src/pages-sections/HeroSection/HeroSection'
 import {loadContentWithLocale} from '../src/helpers/loadContent'
 import {TeamSection} from "../src/pages-sections/TeamSection/TeamSection";
+import {InfoElementsSection} from "../src/pages-sections/InfoSection/InfoElementsSection";
 
 const dashboardRoutes = []
 
@@ -27,9 +28,9 @@ export async function getStaticProps(context) {
         headerData: await loadContentWithLocaleSet('content/header.json'),
         footerData: await loadContentWithLocaleSet('content/footer.json'),
         teamData: await loadContentWithLocaleSet('content/team.json'),
-        aboutData: await loadContentWithLocaleSet('content/about.json'),
         visionData: await loadContentWithLocaleSet('content/vision.json'),
-        contactData: await loadContentWithLocaleSet('content/contact.json')
+        contactData: await loadContentWithLocaleSet('content/contact.json'),
+        infoData: await loadContentWithLocaleSet('content/info.json')
     }
   }
 }
@@ -37,6 +38,7 @@ export async function getStaticProps(context) {
 export default function LandingPage(props) {
   const classes = useStyles()
   const { ...rest } = props
+    console.log(props)
   return (
     <div>
       <Header
@@ -46,7 +48,7 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks {...props.headerData} />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: 'white'
         }}
         {...rest}
@@ -55,7 +57,7 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <div id="about" className={classes.section}>
-            <AboutSection {...props.aboutData}/>
+            <InfoElementsSection {...props.infoData}/>
             <AboutSection {...props.visionData}/>
           </div>
           <div id="team">
