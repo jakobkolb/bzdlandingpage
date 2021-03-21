@@ -22,7 +22,7 @@ export const InfoElement = (props) => {
             <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={12}>
                     <div className={classes.centered}>
-                        <Image className={imageClasses} src={props.image} width={200} height={200}/>
+                        <img className={imageClasses} src={props.image} width={200} height={200}/>
                     </div>
                     <div>
                         <h3 className={classes.title}>{props.name}</h3>

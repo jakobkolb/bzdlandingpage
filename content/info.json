@@ -2,6 +2,10 @@
   "de": {
     "title": "Coming Soon",
     "subtitle": "Unser Lokalmarktplatz für Berliner Läden und Produzent:innen.",
+    "faqText": "Weitere Informationen finden Sie in unseren ",
+    "faqLink": "FAQ",
+    "contactText": "Interesse? Senden sie uns eine ",
+    "contactLink": "Nachricht!",
     "people": [
       {
         "image": "/img/icons/icon_shop.png",
@@ -23,6 +27,10 @@
   "en": {
     "title": "Coming Soon",
     "subtitle": "Our local marketplace for Berlin shops and brands.",
+    "faqText": "Find more information in our ",
+    "faqLink": "FAQ",
+    "contactText": "Interested in joining? ",
+    "contactLink": "Leave us a message!",
     "people": [
       {
         "image": "/img/icons/icon_shop.png",
