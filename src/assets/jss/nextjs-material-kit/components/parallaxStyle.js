@@ -1,4 +1,7 @@
 const parallaxStyle = theme => ({
+  cover: {
+    objectFit: "cover"
+  },
   parallax: {
     height: "100vh",
     maxHeight: "1000px",

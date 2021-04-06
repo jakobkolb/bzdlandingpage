@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 // nodejs library that concatenates classes
 import classNames from 'classnames'
 // nodejs library to set properties for components
@@ -25,7 +26,7 @@ export default function Parallax(props) {
     }
   })
   const resetTransform = () => {
-    var windowScrollTop = window.pageYOffset / 3
+    windowScrollTop = window.pageYOffset / 3
     setTransform('translate3d(0,' + windowScrollTop + 'px,0)')
   }
   const { filter, className, children, style, image, small, responsive } = props
@@ -46,6 +47,13 @@ export default function Parallax(props) {
         transform: transform
       }}
     >
+      <Image
+        src={image}
+        priority={true}
+        layout='fill'
+        className={classes.cover}
+        quality={100}
+      />
       {children}
     </div>
   )
