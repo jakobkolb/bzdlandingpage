@@ -16,18 +16,9 @@
 
 */
 @import "src/assets/scss/core/variables";
-@import "src/assets/scss/core/mixins";
 
 // Core Components
 @import "src/assets/scss/core/misc";
-@import "src/assets/scss/core/page-transition";
-
-// Core Plugins
-
-// @import "plugins/plugin-datetime-picker";
-@import "src/assets/scss/plugins/plugin-nouislider";
-@import "src/assets/scss/plugins/plugin-react-datetime";
-@import "src/assets/scss/plugins/plugin-react-slick";
 
 
 :root {
